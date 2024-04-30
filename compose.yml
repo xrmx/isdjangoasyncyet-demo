@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16.2-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - "55432:5432"
+  valkey:
+    image: valkey/valkey:7.2-alpine
+    ports:
+      - "63790:6379"
