@@ -45,3 +45,13 @@ gunicorn ademo.asgi:application --workers 1 --worker-class uvicorn.workers.Uvico
 ```
 
 The API will be available at [http://localhost:8080](http://localhost:8080).
+
+### OpenTelemetry instrumentation
+
+If you want to debug `asgiref.sync` `sync_to_async and `async_to_sync` usage you can run the service using
+OpenTelemetry automatic instrumentation:
+
+```
+opentelemetry-instrument --traces_exporter console --metrics_exporter none --service_name ademo \
+    gunicorn ademo.asgi:application --workers 1 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8080
+```
