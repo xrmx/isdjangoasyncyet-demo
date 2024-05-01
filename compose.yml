@@ -10,7 +10,3 @@ services:
       - ./data:/var/lib/postgresql/data
     ports:
       - "55432:5432"
-  valkey:
-    image: valkey/valkey:7.2-alpine
-    ports:
-      - "63790:6379"

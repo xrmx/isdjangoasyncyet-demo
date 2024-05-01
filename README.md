@@ -4,9 +4,9 @@ This is a demo for the talk *Is Django async yet?*.
 
 ## Requirements
 
-A Docker Compose V2 file is provided to run the Postgresql and the Valkey (aka Redis) database.
+A Docker Compose V2 file is provided to run the Postgresql database.
 
-You can start the databases with:
+You can start the database with:
 
 ```
 docker compose up
