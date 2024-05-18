@@ -15,7 +15,7 @@ opentelemetry-distro==0.45b0
 opentelemetry-exporter-otlp-proto-common==1.24.0
 opentelemetry-exporter-otlp-proto-grpc==1.24.0
 opentelemetry-instrumentation==0.45b0
-opentelemetry-instrumentation-asgiref @ git+https://github.com/xrmx/opentelemetry-instrumentation-asgiref.git@7b64ecfc08cb741a85b1ea24affc516090b262e7
+opentelemetry-instrumentation-asgiref @ git+https://github.com/xrmx/opentelemetry-instrumentation-asgiref.git@6d125a4bf88c32ac2bb8dd98b89a261e0b1e30d1
 opentelemetry-instrumentation-asyncio==0.45b0
 opentelemetry-proto==1.24.0
 opentelemetry-sdk==1.24.0
