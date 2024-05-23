@@ -48,7 +48,7 @@ The API will be available at [http://localhost:8080](http://localhost:8080).
 
 ### OpenTelemetry instrumentation
 
-If you want to debug `asgiref.sync` `sync_to_async and `async_to_sync` usage you can run the service using
+If you want to debug `asgiref.sync` `sync_to_async` and `async_to_sync` usage you can run the service using
 OpenTelemetry automatic instrumentation:
 
 ```
